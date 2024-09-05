@@ -65,20 +65,33 @@
 :root{
     --bs-body-bg: #fff;
 }
-ul {
-    list-style-type: none;
-}
-ul {
+
+ul, section {
     background: var(--bs-body-bg);
     border: .05em solid rgba(0, 0, 0, 0.175);
     border-radius: 1em;
     margin-top: 1em;
+    overflow: hidden;
+}
+section {
+  padding: .5em 1em;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
 }
 li {
-    padding: .5em;
+  padding: .5em;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 li:hover {
     background: #e9f1ef85;
+}
+main a {
+  text-align: center;
 }
 a {
     text-decoration: none;
@@ -87,6 +100,23 @@ a {
 a, a:visited, a:hover, a:active {
     color: inherit;
   }
+
+input:not([type=radio]) {
+    border-radius: .4em;
+    padding: .5em;
+    border: .05em solid rgba(0, 0, 0, 0.175);
+    width: 100%;
+    margin-top: .5em;
+}
+input[type=radio] {
+  margin-right: .5em;
+}
+
+label {
+  margin-top: .5em;
+  display: inline-block;
+}
+
 img {
     width: 150px;
     max-width: 100%;
@@ -102,7 +132,7 @@ body {
 
 /* START HEADER */
 header {
-    padding: 1em;
+    padding: .75em;
     border-bottom: 1px solid rgba(45,45,45,.1);
     background-color: var(--bs-body-bg);
 }
@@ -111,10 +141,15 @@ h1 {
     font-family: "Sniglet", "Montserrat", sans-serif;
     font-size: xx-large;
 }
-
+h2 {
+    font-size: 1.25em;
+}
+h3 {
+  font-weight: 500;
+  font-size: 1.1em;
+}
 /* START MAIN */
 main {
-    text-align: center;
     margin: 1em;
 }
 
@@ -128,4 +163,52 @@ footer {
     margin: 1em 1em 0;
     border-top: 1px solid rgba(45, 45, 45, .1);
     padding: 1em;
+}
+
+/* BOTONES */
+
+.btn{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #00eac2;
+  --bs-btn-border-color: #00eac2;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #009e85;
+  --bs-btn-hover-border-color: #009e85;
+  --bs-btn-focus-shadow-rgb: 85, 122, 246;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #009e85;
+  --bs-btn-active-border-color: #009e85;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #aaaaaa;
+  --bs-btn-disabled-border-color: #aaaaaa;
+
+  display: inline-block;
+  padding: .6em 1.5em;
+  font-size: .9em;
+  font-weight: 700;
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2em;
+  background-color: var(--bs-btn-bg);
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  margin: .5em auto;
+  display: block;
+}
+
+.btn:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
+}
+
+/* Results */
+ul#results {
+  text-align: left;
+  margin-top: .5em;
+  border: none;
 }
