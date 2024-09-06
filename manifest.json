@@ -34,13 +34,5 @@
   "host_permissions": [
     "https://api.lasercatgames.com/*",
     "https://id.twitch.tv/oauth2/authorize/*"
-  ],
-  "permissions": [
-    "storage",
-    "identity"
-  ],
-  "host_permissions": [
-    "https://api.lasercatgames.com/*",
-    "https://id.twitch.tv/oauth2/authorize/*"
   ]
 }
