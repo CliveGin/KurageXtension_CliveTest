@@ -1,26 +1,47 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
     <header>
-        <a href="/start.html"><h1>KurageApp</h1></a> 
+      <a href="/start.html"><h1>KurageApp</h1></a>
+      <div class="login-bar">
+        <div class="login-fail">
+          <button id="login" class="btn">Log in</button>
+        </div>
+        <div class="login-succeed">
+          <a class="user-data one-line">
+            <img id="user-skin"/>
+            <span id="user-name">Nombre</span>
+          </a>
+          <div class="user-bank one-line">
+            <span id="user-coins">Coins</span>
+            <img class="kurage-coin" src="/media/moneda.gif"/>
+          </div>
+
+        </div>
+
+      </div>
     </header>
     <main>
-        <a href="https://kurageapp.lasercatgames.com/" target="_blank">
-            <img src="media/logo.png" alt="Logo de KurageApp">
-        </a> 
-        <nav>
-            <ul>
-                <li><a href="/html/twitch_login.html">Login</a></li>
-                <li><a href="">Comandos</a></li>
-                <li><a href="">Tienda de Canjes</a></li>
-                <li><a href="">Mis Skins</a></li>
-                <li><a href="">Web Oficial</a></li>
-            </ul>
-        </nav>
+      <a class="kurage-moon" href="https://kurageapp.lasercatgames.com/" target="_blank">
+        <img src="media/logo.png" alt="Logo de KurageApp" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="">Comandos</a></li>
+          <li><a href="">Tienda de Canjes</a></li>
+          <li><a href="">Perfil</a></li>
+          <li><a href="">Web Oficial</a></li>
+        </ul>
+      </nav>
     </main>
-    <footer>© 2024 Lasercat Games </footer>
-</body>
+    <footer>
+        <small>&copy; 2024 Lasercat Games</small>
+    </footer>
+    <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/twitch_login.js"></script>
+  </body>
 </html>

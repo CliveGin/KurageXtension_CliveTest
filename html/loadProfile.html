@@ -1,38 +1,37 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
     <header>
-       <a href="/start.html"><h1>KurageApp</h1></a> 
+      <a href="/start.html"><h1>KurageApp</h1></a>
     </header>
     <main>
-        <h2>Cargar Perfil</h2>
-        <h3>Set your user info</h3>
-        <section>
-            <label>
-                Name:
-                <input type="text" id="user" name="user">
-            </label>
-            <button class="btn" id="search">Search</button>
-            
-            <div  id="error" style="display: none">
-                <p style="color: red">An error has occur</p>
-            </div>
+      <h2>Cargar Perfil</h2>
+      <h3>Set your user info</h3>
+      <section>
+        <label>
+          Name:
+          <input type="text" id="user" name="user" />
+        </label>
+        <button class="btn" id="search">Search</button>
 
-            <div id="results-container" style="display: none">
-                <label>Select one:</label>
-                <ul id="results" style="list-style-type: none"></ul>
-                <button class="btn" id="save">Save</button>
-            </div>
+        <div id="error" style="display: none">
+          <p style="color: red">An error has occur</p>
+        </div>
 
-        </section>
+        <div id="results-container" style="display: none">
+          <label>Select one:</label>
+          <ul id="results" style="list-style-type: none"></ul>
+          <button class="btn" id="save">Save</button>
+        </div>
+      </section>
     </main>
-    <footer>© 2024 Lasercat Games </footer>
-    
-<script src="/scripts/jquery.js"></script>
-<script src="/scripts/options.js"></script>
+    <footer>© 2024 Lasercat Games</footer>
 
-</body>
+    <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/options.js"></script>
+  </body>
 </html>

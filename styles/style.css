@@ -83,6 +83,8 @@ ul {
 li {
   padding: .5em;
   max-width: 100%;
+}
+li, .one-line{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -95,12 +97,15 @@ main a {
 }
 a {
     text-decoration: none;
-    display: block;
+    cursor: pointer;
 }
 a, a:visited, a:hover, a:active {
     color: inherit;
   }
 
+li a {
+  display: block;
+}
 input:not([type=radio]) {
     border-radius: .4em;
     padding: .5em;
@@ -124,17 +129,18 @@ img {
 }
 
 body {
-    width: 300px;
+    width: 350px;
     font-family: "Montserrat", sans-serif;
     background: linear-gradient(135deg, #f8faff, #fef7fd);
     font-size: 18px;
+
 }
 
 /* START HEADER */
 header {
-    padding: .75em;
-    border-bottom: 1px solid rgba(45,45,45,.1);
-    background-color: var(--bs-body-bg);
+  padding: .75em .75em .5em;
+  border-bottom: 1px solid rgba(45, 45, 45, .1);
+  background-color: var(--bs-body-bg);
 }
 
 h1 {
@@ -148,11 +154,51 @@ h3 {
   font-weight: 500;
   font-size: 1.1em;
 }
+/* Header Login */
+.login-bar {
+  display: none;
+}
+.login-bar :is(.login-fail, .login-succeed){
+  border-top: 1px solid rgba(45, 45, 45, .1);
+  margin-top: .5em;
+  padding-top: .5em;
+  margin-bottom: -.25em;
+}
+.user-bank, .user-data{
+  display: inline-block;
+}
+#user-name {
+  font-weight: 600;
+}
+.login-succeed:after {
+  content:"";
+  display:block;
+  clear:both;
+ }
+ .user-data{
+  max-width: 64%;
+}
+.user-bank {
+  text-align: right;
+  float: right;
+  margin-top: .2em;
+  max-width: 34%;
+}
+img#user-skin {
+  width: 2.5em;
+  vertical-align: middle;
+}
+img.kurage-coin {
+  width: 1.5em;
+  vertical-align: middle;
+}
 /* START MAIN */
 main {
     margin: 1em;
 }
-
+.kurage-moon{
+  display: block;
+}
 .kurage-ico:hover {
     background-color: var(--color-background-button-text-hover);
     color: var(--color-fill-button-icon-hover);

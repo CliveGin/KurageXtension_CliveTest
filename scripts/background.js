@@ -1,6 +1,6 @@
 // Twitch Stuff
 const CLIENT_ID = '1ju3ddgggyg1kwxh2oevr8q3xj4yt4';
-const REDIRECT_URI = 'https://imlkpcjeobgjpindbbnfkghgjmgpbcbh.chromiumapp.org/';
+const REDIRECT_URI = 'https://nbjlhcngpgockchgicnfiihmgnanljfo.chromiumapp.org/';
 const RESPONSE_TYPE = "token id_token";
 const SCOPE = 'openid user:read:email';
 const CLAIMS = JSON.stringify({
